@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="30sp" 
+        android:textColor="#FB4FB7"/>
+    
+    <TextView
+        android:id="@+id/tShow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:text="@string/cmd"
+        android:textSize="18sp" 
+        android:textColor="#FB4FB7"/>
+
+    <Button
+        android:id="@+id/bStartSpeech"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginBottom="100dp"
+        android:onClick="startSpeech"
+        android:text="@string/click_speech" 
+        android:textColor="#FB4FB7"/>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <Button
+        android:id="@+id/bHelp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:onClick="getHelp"
+        android:text="@string/help" 
+        android:textColor="#FB4FB7"/>
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
